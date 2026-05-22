@@ -285,7 +285,6 @@ function Select-PreferredIPv4 {
     $ValidIps = @($Ips | Where-Object { $_ -and $_ -match '^\d{1,3}(\.\d{1,3}){3}$' } | Select-Object -Unique)
     if ($ValidIps.Count -eq 0) { return "Çözümlenemedi" }
 
-    # Kıvanç iç ağındaki 10.1.x.x adresleri önceliklidir; IP hard-code edilmez.
     $Preferred = @($ValidIps | Where-Object { $_ -match '^10\.1\.' })
     if ($Preferred.Count -gt 0) { return ($Preferred -join ", ") }
 
