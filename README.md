@@ -1,2 +1,1 @@
-# active-directory-health-report
-Active Directory Domain Controller sağlık kontrollerini yapan, DCDiag, replikasyon, DNS ve kritik servis durumlarını HTML rapor olarak oluşturan PowerShell scripti.
+Active Directory ortamındaki Domain Controller sunucularının genel sağlık durumunu kontrol etmek ve sonuçları okunabilir bir HTML rapor halinde almak için hazırlanmış PowerShell scriptidir. DCDiag, replikasyon, DNS, kritik servisler ve hata özetlerini tek raporda toplar.
